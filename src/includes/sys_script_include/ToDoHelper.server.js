@@ -19,5 +19,12 @@ ToDoHelper.prototype = {
         return grToDo;
     },
 
+	insertToDo: function(){
+        var grToDo = new GlideRecord("x_502054_sdk_cnvd_todo_task");
+		var sysId = grToDo.insert();
+
+		return sysId;
+	},
+
     type: 'ToDoHelper'
 };
